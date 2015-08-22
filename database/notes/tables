@@ -1,0 +1,69 @@
+users
+-----
+    id:             int 11 unsigned primary
+    username:       varchar 100 unique
+    email:          varchar 100 unique
+    password:       varchar 60
+    first_name:     varchar 100
+    last_name:      varchar 100
+    location:       varchar 254
+
+activity
+--------
+    id:             int 11 unsigned primary
+    user_id:        int 11 unsigned
+    activity_type:  varchar(24)
+    created_at:     datetime
+    data:           text
+    
+do_later_index
+--------------
+    id:             int 11 unsigned primary
+    user_id:        int 11 unsigned
+    issue_id:       int 11 unsigned
+    
+favorite_index
+--------------
+    id:             int 11 unsigned primary
+    user_id:        int 11 unsigned
+    issue_id:       int 11 unsigned
+    
+issue
+-----
+    id:             int 11 unsigned primary
+    created_by_id:  int 11 unsigned primary
+    status:         varchar 24
+    created_at:     datetime
+    updated_at:     datetime
+    activated_at:   datetime
+    title:          varchar 254
+    motive:         text
+    
+question
+--------
+    id:             int 11 unsigned primary
+    issue_id:       int 11 unsigned primary
+    created_at:     datetime
+    updated_at:     datetime
+    sort_order:     smallint
+    type:           varchar 24
+    question:       varchar 254
+    
+answer
+------
+    id:             int 11 unsigned primary
+    sort_order:     smallint
+    question_id:    int 11 unsigned primary
+    created_at:     datetime
+    updated_at:     datetime
+    answer:         varchar 254
+
+response
+--------
+    user_id:
+    issue_id:
+    issue_map:
+    response_map:
+    response_type: LIVE, SANDBOX, PREVIEW
+    created_at:
+    updated_at:f
