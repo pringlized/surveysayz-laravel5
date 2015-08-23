@@ -14,6 +14,7 @@ class UserTableSeeder extends Seeder
         DB::table('users')->delete();
         
         DB::table('users')->insert([
+            'user_status'   => 'active',
             'username'      => 'allKindsOfIssues',
             'email'         => 'hfelter@fakedomain.com',
             'role'          => 'admin',
@@ -21,10 +22,12 @@ class UserTableSeeder extends Seeder
             'first_name'    => 'Harvey',
             'last_name'     => 'Felter',
             'location'      => 'San Francisco, CA',
+            'last_login'    => date('Y-m-d H:m:s'),
             'created_at'    => date('Y-m-d H:m:s'),
             'updated_at'    => date('Y-m-d H:m:s')
         ]);  
         DB::table('users')->insert([
+            'user_status'   => 'active',
             'username'      => 'csFlood',
             'email'         => 'petere@fakedomain.com',
             'role'          => 'editor',
@@ -32,6 +35,7 @@ class UserTableSeeder extends Seeder
             'first_name'    => 'Peter',
             'last_name'     => 'Ennis',
             'location'      => 'Mesa, CA',
+            'last_login'    => date('Y-m-d H:m:s'),
             'created_at'    => date('Y-m-d H:m:s'),
             'updated_at'    => date('Y-m-d H:m:s')
         ]);   

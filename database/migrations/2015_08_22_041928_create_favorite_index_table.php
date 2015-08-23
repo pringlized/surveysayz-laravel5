@@ -16,7 +16,7 @@ class CreateFavoriteIndexTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('issue_id')->unsigned();
-            $table->timestamps();
+            $table->timestamp('created_at');
             $table->softDeletes();
         });
     }

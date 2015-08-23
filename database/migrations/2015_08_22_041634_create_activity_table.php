@@ -17,7 +17,7 @@ class CreateActivityTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('activity_type', 24);
             $table->json('data');
-            $table->timestamps();
+            $table->timestamp('created_at');
         });
     }
 

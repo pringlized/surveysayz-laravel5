@@ -18,6 +18,7 @@ class CreateAnswerTable extends Migration
             $table->smallInteger('sort_order');
             $table->string('answer');
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

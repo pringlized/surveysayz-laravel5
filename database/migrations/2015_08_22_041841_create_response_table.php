@@ -15,7 +15,6 @@ class CreateResponseTable extends Migration
         Schema::create('response', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('issue_id')->unsigned();
-            $table->json('issue_map');
             $table->string('response_type');
             $table->timestamps(); 
         });
