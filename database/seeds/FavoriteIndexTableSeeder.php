@@ -15,11 +15,13 @@ class FavoriteIndexTableSeeder extends Seeder
         
         DB::table('favorite_index')->insert([
            'user_id' => 1,
-           'issue_id' => 1 
+           'issue_id' => 1,
+           'created_at'    => date('Y-m-d H:m:s')
         ]);
         DB::table('favorite_index')->insert([
            'user_id' => 1,
-           'issue_id' => 3 
+           'issue_id' => 3,
+           'created_at'    => date('Y-m-d H:m:s')
         ]);
     }
 }

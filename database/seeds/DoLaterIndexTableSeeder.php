@@ -15,7 +15,8 @@ class DoLaterIndexTableSeeder extends Seeder
         
         DB::table('do_later_index')->insert([
             'user_id' => 1,
-            'issue_id' => 3
+            'issue_id' => 3,
+            'created_at'    => date('Y-m-d H:m:s')
         ]);
     }
 }
