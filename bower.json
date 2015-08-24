@@ -1,0 +1,13 @@
+{
+  "name": "SurveySayz",
+  "description": "Laravel 5 survey prototype",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "bootstrap-select": "~1.6.4",
+    "font-awesome": "~4.3.0",
+    "metisMenu": "2.1.0",
+    "jquery-nestable": "!1.0.0"
+  }
+}
