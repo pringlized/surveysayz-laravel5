@@ -59,8 +59,6 @@
                             <ul class="nav nav-tabs">
 								<li class="active"><a aria-expanded="false" data-toggle="tab" href="#tab-issues">User Created Issues</a></li>
                                 <li class=""><a aria-expanded="true" data-toggle="tab" href="#tab-1">Activities</a></li>
-                                <li class=""><a aria-expanded="false" data-toggle="tab" href="#tab-2">Favorites</a></li>
-								<li class=""><a aria-expanded="false" data-toggle="tab" href="#tab-3">Do Later</a></li>
                             </ul>
                         </div>
                     </div>
@@ -85,34 +83,6 @@
                                 								
 							</div>
 							<!-- END ACTIVITY TAB -->
-
-							<!-- FAVORITES TAB -->
-                            <div id="tab-2" class="tab-pane">
-								<div class="feed-activity-list">
-									
-    								@forelse ($favorites as $favorite)
-    								    @include('admin.items.favorites_list_item')
-    								@empty
-    								    @include('admin.items.favorites_list_item_none')
-    								@endforelse
-
-								</div>
-                            </div>
-                            <!-- END FAVORITES TAB -->
-                     
-							<!-- DO LATER TAB -->       
-                            <div id="tab-3" class="tab-pane">
-								<div class="feed-activity-list">
-    								
-    								@forelse ($doLaters as $doLater)
-    								    @include('admin.items.dolater_list_item')
-    								@empty
-    								    @include('admin.items.dolater_list_item_none')
-    								@endforelse
-
-								</div>
-                            </div>
-                            <!-- DO LATER TAB -->
                             
 							<!-- USER ISSUES TAB -->       
                             <div id="tab-issues" class="tab-pane active">
