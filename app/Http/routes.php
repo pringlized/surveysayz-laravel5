@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'Main\MainController@index');
+Route::get('/issues/{issue_id}', 'Main\MainController@show');
 
 // Authentication routes...
 Route::get('/login', 'Auth\AuthController@getLogin');

@@ -50,7 +50,8 @@ class MainController extends Controller
      */
     public function show($id)
     {
-        //
+        $issue = \App\IssueModel::find($id);
+        return view('main.issue', ['issue' => $issue]);
     }
 
     /**

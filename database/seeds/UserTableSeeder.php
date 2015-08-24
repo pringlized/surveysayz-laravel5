@@ -16,11 +16,11 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert([
             'user_status'   => 'active',
             'username'      => 'allKindsOfIssues',
-            'email'         => 'hfelter@fakedomain.com',
+            'email'         => 'mmaser@fakedomain.com',
             'role'          => 'admin',
             'password'      => bcrypt('somesecret'),
-            'first_name'    => 'Harvey',
-            'last_name'     => 'Felter',
+            'first_name'    => 'Mike',
+            'last_name'     => 'Maser',
             'location'      => 'San Francisco, CA',
             'last_login'    => date('Y-m-d H:m:s'),
             'created_at'    => date('Y-m-d H:m:s'),
@@ -29,15 +29,28 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert([
             'user_status'   => 'active',
             'username'      => 'csFlood',
-            'email'         => 'peter@fakedomain.com',
+            'email'         => 'pflood@fakedomain.com',
             'role'          => 'user',
             'password'      => bcrypt('somesecret'),
             'first_name'    => 'Peter',
-            'last_name'     => 'Ennis',
+            'last_name'     => 'Flood',
             'location'      => 'Mesa, CA',
             'last_login'    => date('Y-m-d H:m:s'),
             'created_at'    => date('Y-m-d H:m:s'),
             'updated_at'    => date('Y-m-d H:m:s')
-        ]);   
+        ]);
+        DB::table('users')->insert([
+            'user_status'   => 'active',
+            'username'      => 'CelticConnor',
+            'email'         => 'sConnor@fakedomain.com',
+            'role'          => 'contributor',
+            'password'      => bcrypt('somesecret'),
+            'first_name'    => 'Sarah',
+            'last_name'     => 'Connor',
+            'location'      => 'Madison, WI',
+            'last_login'    => date('Y-m-d H:m:s'),
+            'created_at'    => date('Y-m-d H:m:s'),
+            'updated_at'    => date('Y-m-d H:m:s')
+        ]); 
     }
 }

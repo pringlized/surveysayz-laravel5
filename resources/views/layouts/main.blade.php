@@ -44,9 +44,6 @@
     @yield('content')
 </div>
 
-    <div class="container" style="margin-top: 20px">
-        NOTES: Events are wired to title & category
-    </div>
 </body>
 
 </html>

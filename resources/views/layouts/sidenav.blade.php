@@ -38,6 +38,7 @@
                     <li><a href="{{ url('/admin/users') }}">User List</a></li>
                 </ul>
             </li>
+            <!--
             <li>
                 <a href="#"><i class="fa fa-cog"></i> <span class="nav-label">System</span><span class="fa arrow"></span></a>
                 <ul class="nav nav-second-level">
@@ -47,7 +48,7 @@
                     <li><a href="/login">Login</a></li>
                 </ul>
             </li>
-
+            -->
         </ul>
 
     </div>
