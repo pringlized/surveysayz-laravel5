@@ -74,7 +74,6 @@
 	
     <script>
         $(document).ready(function() {
-
             
             $("#submitForm").on('click', function() {
                 var form = $("#add-issue-form");

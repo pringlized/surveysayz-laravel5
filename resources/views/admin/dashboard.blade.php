@@ -21,7 +21,7 @@
 	                showMethod: 'slideDown',
 	                timeOut: 4000
 	            };
-	            toastr.success('Responsive Admin Theme', 'SurveySayz');
+	            toastr.success('Test Notification message', 'SurveySayz');
 	
 	        }, 1300);
 	    });

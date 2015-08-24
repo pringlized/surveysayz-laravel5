@@ -1,0 +1,239 @@
+/* WIDGETS */
+.widget {
+  border-radius: 5px;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.widget.style1 h2 {
+  font-size: 30px;
+}
+.widget h2,
+.widget h3 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+/* ISSUE LIST */
+.issue-list-item {
+  padding: 20px;
+  margin-bottom: 2px;
+  background: #fff;
+}
+.issue-list-item img.img-circle {
+    width: 38px;
+    height: 38px;
+}
+.issue-list-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f9af0;
+  display: block;
+}
+.issue-list-title:hover {
+  color: #0E83C9;
+}
+.issue-answer {
+  margin-top: 10px;
+  background: #f3f3f4;
+  border: 1px solid #e7eaec;
+  border-radius: 3px;
+  padding: 15px;
+}
+
+/* Issue List Icons */
+.issue-list-icon-group a, a.hover, a.focus{
+	color: #676A6C;
+}
+
+/* labels, etc */
+.label-info,
+.badge-info {
+  background-color: #0e9aef;
+  color: #FFFFFF;
+}
+/*
+.issue-list-item {
+  background: #f3f3f4;
+  padding: 2px 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+*/
+
+/* BOOTSTRAP BUTTONS */
+.btn-primary {
+    background-color: #0e9aef;
+    border-color: #0e9aef;
+    color: #FFF;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-color: #0E83C9;
+  border-color: #0E83C9;
+  color: #FFFFFF;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background-image: none;
+}
+.btn-primary.disabled,
+.btn-primary.disabled:hover,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled],
+.btn-primary[disabled]:hover,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:active,
+.btn-primary.active[disabled],
+fieldset[disabled] .btn-primary,
+fieldset[disabled] .btn-primary:hover,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #1dc5a3;
+  border-color: #1dc5a3;
+}
+
+/* INPUTS */
+.form-control,
+.single-line {
+  background-color: #FFFFFF;
+  background-image: none;
+  border: 1px solid #e5e6e7;
+  border-radius: 1px;
+  color: inherit;
+  display: block;
+  padding: 6px 12px;
+  transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  width: 100%;
+  font-size: 14px;
+}
+.form-control:focus,
+.single-line:focus {
+  border-color: #66AFE9;
+}
+
+.activity-data {
+  background: #fff;
+  border-radius: 3px;
+    padding: 10px;
+
+    margin: 0px 0px 10px;
+    font-size: 13px;
+    line-height: 1.42857;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 1px solid #CCC;
+}
+
+/*
+ *
+ *   ADMIN SKIN 1
+ *   NAME - Blue light
+ *
+*/
+.skin-admin .minimalize-styl-2 {
+  margin: 14px 5px 5px 30px;
+}
+.skin-admin .navbar-top-links li:last-child {
+  margin-right: 30px;
+}
+.skin-admin.fixed-nav .minimalize-styl-2 {
+  margin: 14px 5px 5px 15px;
+}
+.skin-admin .spin-icon {
+  background: #0e9aef !important;
+}
+.skin-admin .nav-header {
+  background: #0e9aef;
+  background: url('patterns/header-profile-skin-1.png');
+}
+.skin-admin.mini-navbar .nav-second-level {
+  background: #3e495f;
+}
+.skin-admin .breadcrumb {
+  background: transparent;
+}
+.skin-admin .page-heading {
+  border: none;
+}
+.skin-admin .nav > li.active {
+  background: #3a4459;
+}
+.skin-admin .nav > li > a {
+  color: #9ea6b9;
+}
+.skin-admin .nav > li.active > a {
+  color: #fff;
+}
+.skin-admin .navbar-minimalize {
+  background: #0e9aef;
+  border-color: #0e9aef;
+}
+body.skin-admin {
+  background: #3e495f;
+}
+.skin-admin .navbar-static-top {
+  background: #ffffff;
+}
+.skin-admin .dashboard-header {
+  background: transparent;
+  border-bottom: none !important;
+  border-top: none;
+  padding: 20px 30px 10px 30px;
+}
+.fixed-nav.skin-admin .navbar-fixed-top {
+  background: #fff;
+}
+.skin-admin .wrapper-content {
+  padding: 30px 15px;
+}
+.skin-admin #page-wrapper {
+  background: #f4f6fa;
+}
+.skin-admin .ibox-title,
+.skin-admin .ibox-content {
+  border-width: 1px;
+}
+.skin-admin .ibox-content:last-child {
+  border-style: solid solid solid solid;
+}
+.skin-admin .nav > li.active {
+  border: none;
+}
+.skin-admin .nav-header {
+  padding: 35px 25px 25px 25px;
+}
+.skin-admin .nav-header a.dropdown-toggle {
+  color: #fff;
+  margin-top: 10px;
+}
+.skin-admin .nav-header a.dropdown-toggle .text-muted {
+  color: #fff;
+  opacity: 0.8;
+}
+.skin-admin .profile-element {
+  text-align: center;
+}
+.skin-admin .img-circle {
+  border-radius: 5px;
+}
+.skin-admin .navbar-default .nav > li > a:hover,
+.skin-admin .navbar-default .nav > li > a:focus {
+  background: #3a4459;
+  color: #fff;
+}
+.skin-admin .nav.nav-tabs > li.active > a {
+  color: #555;
+}
+.skin-admin .nav.nav-tabs > li.active {
+  background: transparent;
+}
