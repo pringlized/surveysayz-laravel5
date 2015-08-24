@@ -29,8 +29,8 @@ class UserTableSeeder extends Seeder
         DB::table('users')->insert([
             'user_status'   => 'active',
             'username'      => 'csFlood',
-            'email'         => 'petere@fakedomain.com',
-            'role'          => 'editor',
+            'email'         => 'peter@fakedomain.com',
+            'role'          => 'user',
             'password'      => bcrypt('somesecret'),
             'first_name'    => 'Peter',
             'last_name'     => 'Ennis',
