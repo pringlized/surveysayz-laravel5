@@ -2,12 +2,22 @@
 Wanted to build basic example survey site on Laravel 5 to play around with.  It has a public component that shows currently available surveys, and an administrative section that allows for the creation and editing of the surveys.
 
 
-------------------
 ## Overview
 Coming soon..
 
-#### Requirements
+#### Composer require
 - PHP >= 5.5.4
+- laravel/framework
+- tymon/jwt-auth
+
+#### Bower require
+- bootstrap
+- font-awesome
+- metisMenu
+- jquery-nestable
+- toastr
+- pace
+- validate
 
 ####Jquery plugins used
 - toastr: Notification lib
@@ -75,3 +85,8 @@ pass: somesecret
 
 ## Creation & Editorial process
 Coming soon..
+
+## Improvements
+- 'roles' DB table
+- wire up 'favorites' & 'do later'
+- repository pattern for API data retrieval

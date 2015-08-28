@@ -8,6 +8,10 @@
     "bootstrap-select": "~1.6.4",
     "font-awesome": "~4.3.0",
     "metisMenu": "2.1.0",
-    "jquery-nestable": "!1.0.0"
+    "jquery-nestable": "*",
+    "jquery-validation": "~1.14.0",
+    "jeditable": "~1.7.3",
+    "toastr": "~2.1.2",
+    "pace": "0.5.1"
   }
 }
