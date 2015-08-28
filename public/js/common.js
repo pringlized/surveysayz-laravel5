@@ -1,4 +1,3 @@
-// Custom scripts
 $(document).ready(function () {
 
     // MetsiMenu
@@ -25,6 +24,7 @@ $(document).ready(function () {
  
     $("[data-toggle=popover]")
         .popover();
+
 });
 
 // Minimalize menu when screen is less than 768px
