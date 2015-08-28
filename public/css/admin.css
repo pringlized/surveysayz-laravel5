@@ -237,3 +237,30 @@ body.skin-admin {
 .skin-admin .nav.nav-tabs > li.active {
   background: transparent;
 }
+
+/* Question & Answer dd handles & content */
+.dd3-handle {
+    position: absolute;
+    margin: 0px;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+    width: 40px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    border: 1px solid #AAA;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.dd3-content {
+    display: block;
+    height: 42px;
+    margin: 5px 0px;
+    padding: 12px 10px 5px 50px;
+    text-decoration: none;
+    border: 0px solid #CCC;
+    background: #F3F3F4 none repeat scroll 0% 0%;
+    border-radius: 3px;
+    box-sizing: border-box;
+}

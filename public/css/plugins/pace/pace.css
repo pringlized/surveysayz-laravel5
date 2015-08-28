@@ -1,0 +1,34 @@
+/* PEACE */
+.pace .pace-progress {
+  background: #0f9af0;
+  position: fixed;
+  z-index: 2000;
+  top: 0px;
+  left: 220px;
+  height: 2px;
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
+}
+.body-small .pace .pace-progress {
+  left: 0px;
+}
+.pace-inactive {
+  display: none;
+}
+
+.pace-done .nav-header {
+  transition: all 0.5s;
+}
+
+.pace-done .navbar-static-side,
+.pace-done .nav-header,
+.pace-done li.active,
+.pace-done #page-wrapper,
+.pace-done .footer {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}

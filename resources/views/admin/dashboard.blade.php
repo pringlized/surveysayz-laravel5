@@ -7,11 +7,7 @@
 @endsection
 
 @section('footerjs')
-    @parent
-    
-    <!-- Toastr -->
-    <script src="js/plugins/toastr/toastr.min.js"></script>
-    
+    @parent   
 	<script>
 	    $(document).ready(function() {
 	        setTimeout(function() {
@@ -22,7 +18,7 @@
 	                timeOut: 4000
 	            };
 	            toastr.success('Test Notification message', 'SurveySayz');
-	
+	            toastr.success('2nd test', 'Yo yo');
 	        }, 1300);
 	    });
 	</script>

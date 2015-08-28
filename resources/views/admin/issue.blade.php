@@ -115,15 +115,18 @@
 											<div class="ibox ">  
 					                            
 					                            @if ($editable == true)
+												<form id="frmAddQuestion" method="post" action="{{ url('/api/v1/admin/question') }}">
+												{!! csrf_field() !!}
+												<input type="hidden" name="issueId" value="{{ $issue->id }}">
 					                            <div class="row wrapper m-t-sm m-b-sm">
 													<label class="radio-inline">
-													  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Single Choice
+													  <input type="radio" name="questionType" id="questionType" value="single_choice" checked> Single Choice
 													</label>
 													<label class="radio-inline">
-													  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Multiple Choice
+													  <input type="radio" name="questionType" id="questionType" value="multiple_choice"> Multiple Choice
 													</label>
 													<label class="radio-inline">
-													  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> Essay
+													  <input type="radio" name="questionType" id="questionType" value="essay"> Essay
 													</label>
 					                            </div> 
 					                            
@@ -131,18 +134,19 @@
 												<div class="row m-b-lg">
 												  <div class="col-lg-12">
 												    <div class="input-group">
-												      <input type="text" class="form-control" placeholder="Enter question...">
+												      <input name="question" id="questionInput" type="text" class="form-control" placeholder="Enter question...">
 												      <span class="input-group-btn">
-												        <button class="btn btn-primary" type="button">Add</button>
+												        <button id="btnAddQuestion" class="btn btn-primary" type="button">Add</button>
 												      </span>
 												    </div><!-- /input-group -->
 												  </div><!-- /.col-lg-12 -->
 												</div><!-- /.row -->
 					                            <!-- END QUESTION INPUT GROUP -->
+												</form>
 					                            @endif
 
 												<!-- NESTABLE SORTABLE LIST -->
-					                            <div class="dd" id="nestable2">
+					                            <div class="dd" id="nestable2" data-issue="{{ $issue->id }}">
 					                                <ol class="dd-list">
                                                         @forelse ($questions as $question)
                                         				    @include('admin.items.question_list_item')
@@ -152,15 +156,6 @@
 					                                </ol>
 					                            </div>
 					                            <!-- END NESTABLE SORTABLE LIST -->
-
-												<!-- NESTABLE OUTPUT -->
-					                            @if ($editable == true)
-					                            <div class="m-t-md">
-					                                <h5>Serialised Output</h5>
-					                            </div>
-					                            <textarea id="nestable2-output" class="form-control"></textarea>
-					                            @endif
-					                            <!-- END NESTABLE OUTPUT -->
 
         									</div>
     									</div>
@@ -223,41 +218,8 @@
 
 @section('footerjs')
     @parent
-	<!-- Nestable List -->
 	<script src="/js/plugins/nestable/jquery.nestable.js"></script>
-	
-	<script>
-	     $(document).ready(function(){
-	
-	         var updateOutput = function (e) {
-	             var list = e.length ? e : $(e.target),
-	                     output = list.data('output');
-	             if (window.JSON) {
-	                 output.val(window.JSON.stringify(list.nestable('serialize')));//, null, 2));
-	             } else {
-	                 output.val('JSON browser support required for this demo.');
-	             }
-	         };
-	
-	         // activate Nestable for list 2
-	         $('#nestable2').nestable({
-	             group: 1
-	         }).on('change', updateOutput);
-	
-	         // output initial serialised data
-	
-	         updateOutput($('#nestable2').data('output', $('#nestable2-output')));
-	
-	         $('#nestable-menu').on('click', function (e) {
-	             var target = $(e.target),
-	                     action = target.data('action');
-	             if (action === 'expand-all') {
-	                 $('.dd').nestable('expandAll');
-	             }
-	             if (action === 'collapse-all') {
-	                 $('.dd').nestable('collapseAll');
-	             }
-	         });
-	     });
-	</script>
+	<script src="/js/plugins/jeditable/jquery.jeditable.js"></script>
+	<script src="/js/modules/questions_module.js"></script>
+	<script src="/js/modules/answers_module.js"></script>
 @endsection

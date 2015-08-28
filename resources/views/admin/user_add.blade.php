@@ -112,7 +112,7 @@
 
 @section('footerjs')
     @parent
-	<!-- Jquery Validate -->
+	<!-- Validate -->
 	<script src="/js/plugins/validate/jquery.validate.min.js"></script>
 	
     <script>
